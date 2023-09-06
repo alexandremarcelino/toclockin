@@ -12,9 +12,9 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class AccessLevel {
+public class Occurrence {
     @Id
-    private long id;
+    private long Id;
+    private String name;
     private String description;
-
 }

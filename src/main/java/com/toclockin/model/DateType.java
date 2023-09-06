@@ -12,9 +12,9 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class AccessLevel {
+public class DateType {
     @Id
     private long id;
     private String description;
-
 }
+

@@ -2,10 +2,8 @@ package com.toclockin.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-
+import javax.persistence.*;
+import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
@@ -13,10 +11,11 @@ import javax.persistence.ManyToOne;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class Locality {
+public class Calendar {
     @Id
-    private long id;
+    private Long id;
     @ManyToOne
-    private AccessLevel accessLevel;
+    private DateType dateType;
     private String description;
+    private LocalDateTime specialDate;
 }
